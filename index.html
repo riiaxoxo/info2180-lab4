@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,20 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
     <main class="container">
         <h1>Superhero Search</h1>
-        <p>Click the button below to view the list of superheroes.</p>
-        <button id="search-button" type="button">Search</button>
+
+        <form id="search-form">
+            <label for="query">Search by superhero name or alias:</label>
+            <input type="text" id="query" name="query" placeholder="e.g. Tony Stark or Ironman">
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="result"></div>
     </main>
+
 </body>
+
 </html>
